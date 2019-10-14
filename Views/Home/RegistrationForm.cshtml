@@ -1,0 +1,75 @@
+@model IndexViewModel
+
+<form asp-action="Register" asp-controller="Home" method="post">
+    <div class="form-group">
+        <div class=col>
+            <label asp-for="newUser.FirstName">Fist Name:</label>
+        </div>
+        <div class=col>
+            <input class="form-control" asp-for="newUser.FirstName">
+        </div>
+        <div class=col>
+            <span asp-validation-for="newUser.FirstName"></span>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class=col>
+            <label asp-for="newUser.LastName">Last Name:</label>
+        </div>
+        <div class=col>
+            <input class="form-control" asp-for="newUser.LastName">
+        </div>
+        <div class=col>
+            <span asp-validation-for="newUser.LastName"></span>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class=col>
+            <label asp-for="newUser.Email">Email: </label>
+        </div>
+        <div class=col>
+            <input class="form-control" asp-for="newUser.Email">
+        </div>
+        <div class=col>
+            <span asp-validation-for="newUser.Email"></span>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class=col>
+            <label asp-for="newUser.DateOfBirth">Date of Birth: </label>
+        </div>
+        <div class=col>
+            <input class="form-control" asp-for="newUser.DateOfBirth">
+        </div>
+        <div class=col>
+            <span asp-validation-for="newUser.DateOfBirth"></span>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class=col>
+            <label asp-for="newUser.Password">Password: </label>
+        </div>
+        <div class=col>
+            <input class="form-control" asp-for="newUser.Password">
+        </div>
+        <div class=col>
+            <span asp-validation-for="newUser.Password"></span>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class=col>
+            <label asp-for="newUser.Confirm">Confirm Password: </label>
+        </div>
+        <div class=col>
+            <input class="form-control" asp-for="newUser.Confirm">
+        </div>
+        <div class=col>
+            <span asp-validation-for="newUser.Confirm"></span>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col">
+            <input class="btn btn-secondary" type="submit" value="Register">
+        </div>
+    </div>
+</form>
